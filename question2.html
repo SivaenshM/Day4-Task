@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #coloum {
+        float: left;
+        width: 10%;
+        padding: 10px;
+      }
+
+      /* Clearfix (clear floats) */
+      #countryFlag::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      img {
+        border-radius: 100%;
+      }
+      button {
+        position: absolute;
+        border-radius: 8px;
+        background-color: rgba(44, 145, 44, 0.8);
+        padding: 10px 10px;
+        font-size: 20px;
+        font-weight: bold;
+        align-items: flex-start;
+        border-color: rgba(44, 145, 44, 0.8);
+        text-decoration: none;
+      }
+    </style>
+
+    <title>Day3 Activity</title>
+  </head>
+  <body>
+    <h1 class="text-center">Day 4 Activities Answer 2</h1>
+    <p style="font-weight: bold; font-size: 2.5em">
+      Use the res countries 'API URL -> https://restcountries.eu/rest/v2/all and
+      display all the contries flag in the console
+    </p>
+    <br />
+    <button class="text-end" class="btn btn-success">
+      <a href="index.html">Home page</a>
+    </button>
+    <br />
+    <br />
+    <br />
+
+    <div id="countryFlag"></div>
+
+    <p style="text-decoration: underline">
+      [Note:Please check the window console to check the excuted code]
+    </p>
+    <br />
+
+    <script src="task2.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
